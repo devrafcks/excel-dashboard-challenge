@@ -32,8 +32,6 @@ Desenvolver uma aplicação web que permita o upload de um arquivo Excel e gere 
 2. **Leitura e limpeza do Excel**: uso da biblioteca `xlsx` para ler a primeira planilha; filtragem de linhas inválidas; normalização de categorias (ex.: ASSINATURA → ASSINATURAS) e de meses (Jan–Dez); parsing de Receita e Quantidade.
 3. **Agregações**: cálculo de métricas (receita total, pedidos, ticket médio, quantidade total); vendas por categoria com percentual; vendas e quantidade por mês; top produtos por receita.
 4. **Interface**: componente de upload (DropZone); header com “Novo Arquivo”; dashboard com cards de métricas, grid de gráficos (Recharts), painel de filtros, tabela de top produtos e tabela completa com ordenação, paginação e busca.
-5. **Estilos**: CSS por componente na pasta `styles/`; padronização dos cards de gráficos; grid responsivo (2 colunas → 1 coluna); tooltips com fundo e borda consistentes.
-6. **Refinamentos**: remoção de código morto; alinhamento de tabelas à esquerda; legenda no gráfico Top 5; documentação no README.
 
 ---
 
@@ -69,7 +67,7 @@ npm install
 npm run dev
 ```
 
-A aplicação sobe em `http://localhost:5173` (ou outra porta se 5173 estiver em uso).
+A aplicação sobe em `http://localhost:5173`
 
 **Build para produção:**
 
@@ -88,28 +86,6 @@ Colunas utilizadas: **Data**, **Categoria**, **Codigo_Produto**, **Produto**, **
 
 ---
 
-## Estrutura do projeto
-
-```
-front/
-├── public/
-├── src/
-│   ├── components/     # Componentes React (Dashboard, gráficos, tabelas, DropZone, etc.)
-│   ├── styles/        # CSS por componente/página
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── index.css      # Estilos globais
-│   ├── types.ts       # Tipos (Sale, DashboardData, Metrics, etc.)
-│   └── utils.ts       # Leitura Excel, limpeza, agregações, formatação
-├── index.html
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-```
-
----
-
 ## Scripts
 
 | Script              | Descrição                      |
@@ -121,10 +97,3 @@ front/
 
 ---
 
-## Entrega
-
-- Código fonte no repositório.
-- README com objetivo, o que foi feito, etapas de desenvolvimento e como rodar o projeto.
-- Incluir o arquivo Excel de exemplo no repositório caso tenha sido usado para tratamento/validação dos dados.
-
-Projeto de avaliação técnica. Uso conforme definido pelo autor.
