@@ -1,0 +1,210 @@
+.data-table-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+
+.data-table-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.data-table-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.data-table-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.data-table-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.data-table-search-icon {
+  position: absolute;
+  left: 10px;
+  color: #718096;
+  pointer-events: none;
+}
+
+.data-table-search {
+  padding: 8px 12px 8px 36px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 220px;
+}
+
+.data-table-search:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+.data-table-per-page {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.data-table-per-page-label {
+  font-size: 12px;
+  color: #718096;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.data-table-per-page-select {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  color: #2d3748;
+}
+
+.data-table-empty {
+  text-align: center;
+  padding: 32px 16px !important;
+  color: #718096;
+  font-size: 14px;
+}
+
+.data-table-wrap {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead tr {
+  background-color: #f0f4f8;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.data-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.data-table th:hover {
+  background-color: #e2e8f0;
+}
+
+.data-table th .sort-icon {
+  margin-left: 8px;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.data-table tbody tr:hover {
+  background-color: #edf2f7;
+}
+
+.data-table td {
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #4a5568;
+}
+
+.data-table td.product-name {
+  color: #1a202c;
+  font-weight: 500;
+}
+
+.data-table td.receita {
+  color: #3182ce;
+  font-weight: 600;
+}
+
+.data-table td.num {
+  text-align: left;
+}
+
+.data-table .badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #edf2f7;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.data-table-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e2e8f0;
+}
+
+.data-table-pagination-info {
+  font-size: 12px;
+  color: #718096;
+  font-weight: 500;
+}
+
+.data-table-pagination-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.data-table-pagination-page {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #718096;
+  font-weight: 600;
+}
+
+.data-table-btn {
+  padding: 8px 12px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.data-table-btn:hover:not(:disabled) {
+  background-color: #2c5aa0;
+}
+
+.data-table-btn:disabled {
+  background-color: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
