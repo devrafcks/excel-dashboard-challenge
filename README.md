@@ -1,4 +1,7 @@
 # Dashboard 
+<img width="1771" height="863" alt="image" src="https://github.com/user-attachments/assets/1fa50ef4-a272-439a-893b-a5ea834c3ac7" />
+
+https://desafio-excel.vercel.app
 
 Aplicação web desenvolvida como teste técnico. Permite o upload de um arquivo Excel e gera um dashboard com análise, organização e apresentação dos dados ao usuário.
 
