@@ -38,13 +38,6 @@ Desenvolver uma aplicação web que permita o upload de um arquivo Excel e gere 
 
 ---
 
-## Requisitos atendidos
-
-- Código organizado e claro.
-- README com etapas seguidas durante o desenvolvimento.
-
----
-
 ## Stack utilizada
 
 - React 19 com TypeScript
